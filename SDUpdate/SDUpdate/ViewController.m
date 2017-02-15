@@ -31,6 +31,7 @@
 -(void)onClick:(id)sender
 {
     SDUpdate *updater = [SDUpdate shareInstance];
+    updater.appleID = @"xxxx";
     updater.curAppVersion = @"5.3.0";
     updater.controller = self;
     [updater begin];
